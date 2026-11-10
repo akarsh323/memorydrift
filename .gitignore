@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Inspect AI eval logs. Published summaries live under results/.
+logs/
+*.eval
+
+# Model weights and local training output
+checkpoints/
+*.safetensors
+*.gguf
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# OS and editor
+.DS_Store
+.idea/
+.vscode/
