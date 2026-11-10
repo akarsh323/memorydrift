@@ -1,0 +1,3484 @@
+{
+  "generated_on": "2026-11-11",
+  "memorydrift_version": "0.1.0",
+  "inspect_ai_version": "0.3.289",
+  "resamples": 10000,
+  "confidence": 0.95,
+  "seed": 0,
+  "groups": [
+    {
+      "model": "memorydrift/amnesiac",
+      "condition": "stateless",
+      "memory_policy": null,
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1364.7777777777778,
+          "low": 1355.799861111111,
+          "high": 1373.219513888889,
+          "numerator": 491320.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 491320.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "condition": "memory",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1480.875,
+          "low": 1471.9080555555556,
+          "high": 1489.3001388888888,
+          "numerator": 533115.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 533115.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "condition": "memory_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1546.875,
+          "low": 1537.9080555555556,
+          "high": 1555.3001388888888,
+          "numerator": 556875.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.042666666666666665,
+          "low": 0.04243553919256455,
+          "high": 0.04291543942543565,
+          "numerator": 23760.0,
+          "denominator": 556875.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "condition": "memory_poison",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1480.875,
+          "low": 1471.9080555555556,
+          "high": 1489.3001388888888,
+          "numerator": 533115.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 533115.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 2.0,
+          "low": 2.0,
+          "high": 2.0,
+          "numerator": 80.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "condition": "memory_poison_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1546.875,
+          "low": 1537.9080555555556,
+          "high": 1555.3001388888888,
+          "numerator": 556875.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.042666666666666665,
+          "low": 0.04243553919256455,
+          "high": 0.04291543942543565,
+          "numerator": 23760.0,
+          "denominator": 556875.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 2.0,
+          "low": 2.0,
+          "high": 2.0,
+          "numerator": 80.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "condition": "stateless",
+      "memory_policy": null,
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1703.0861111111112,
+          "low": 1692.885763888889,
+          "high": 1712.650138888889,
+          "numerator": 613111.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 613111.0
+        },
+        "amendments_check_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "condition": "memory",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.2,
+          "low": 0.2,
+          "high": 0.2,
+          "numerator": 80.0,
+          "denominator": 400.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1606.0453125,
+          "low": 1598.6140234375,
+          "high": 1613.0125390625,
+          "numerator": 1027869.0,
+          "denominator": 640.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 1027869.0
+        },
+        "amendments_check_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "condition": "memory_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 120.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.2727272727272727,
+          "low": 0.2727272727272727,
+          "high": 0.2727272727272727,
+          "numerator": 120.0,
+          "denominator": 440.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 2764.0578125,
+          "low": 2755.8749609375,
+          "high": 2771.9662890625,
+          "numerator": 1768997.0,
+          "denominator": 640.0
+        },
+        "dream_token_share": {
+          "value": 0.41585146837445175,
+          "low": 0.4148893360158368,
+          "high": 0.4169058226938785,
+          "numerator": 735640.0,
+          "denominator": 1768997.0
+        },
+        "amendments_check_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 120.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 600.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "condition": "memory_poison",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "poison_follow_given_seen": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "verified_given_note": {
+          "value": 0.2727272727272727,
+          "low": 0.2727272727272727,
+          "high": 0.2727272727272727,
+          "numerator": 120.0,
+          "denominator": 440.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1638.165625,
+          "low": 1629.9514453125,
+          "high": 1646.073515625,
+          "numerator": 1048426.0,
+          "denominator": 640.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 1048426.0
+        },
+        "amendments_check_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "condition": "memory_poison_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 120.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.2727272727272727,
+          "low": 0.2727272727272727,
+          "high": 0.2727272727272727,
+          "numerator": 120.0,
+          "denominator": 440.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 2772.0890625,
+          "low": 2763.905625,
+          "high": 2780.0048046875,
+          "numerator": 1774137.0,
+          "denominator": 640.0
+        },
+        "dream_token_share": {
+          "value": 0.41754385371591934,
+          "low": 0.41658940369239167,
+          "high": 0.41857759298671354,
+          "numerator": 740780.0,
+          "denominator": 1774137.0
+        },
+        "amendments_check_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 120.0
+        },
+        "dream_poison_repair_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "dream_correct_loss_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 560.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 640.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "condition": "stateless",
+      "memory_policy": null,
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "numerator": 40.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5541666666666667,
+          "low": 0.5083333333333333,
+          "high": 0.6041666666666666,
+          "numerator": 133.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.585,
+          "low": 0.525,
+          "high": 0.645,
+          "numerator": 117.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.55,
+          "low": 0.495,
+          "high": 0.605,
+          "numerator": 110.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.525,
+          "low": 0.45625,
+          "high": 0.59375,
+          "numerator": 84.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1364.7777777777778,
+          "low": 1355.799861111111,
+          "high": 1373.219513888889,
+          "numerator": 491320.0,
+          "denominator": 360.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 491320.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "condition": "memory",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.6875,
+          "low": 0.6875,
+          "high": 0.6875,
+          "numerator": 440.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.3125,
+          "low": 0.3125,
+          "high": 0.3125,
+          "numerator": 200.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 440.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 1714.7613636363637,
+          "low": 1705.9473295454545,
+          "high": 1722.9775,
+          "numerator": 754495.0,
+          "denominator": 440.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 754495.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 3.0,
+          "low": 3.0,
+          "high": 3.0,
+          "numerator": 120.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.375,
+          "low": 0.375,
+          "high": 0.375,
+          "numerator": 240.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "condition": "memory_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.8125,
+          "low": 0.8125,
+          "high": 0.8125,
+          "numerator": 520.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.1875,
+          "low": 0.1875,
+          "high": 0.1875,
+          "numerator": 120.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.4,
+          "low": 0.4,
+          "high": 0.4,
+          "numerator": 80.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.6,
+          "low": 0.6,
+          "high": 0.6,
+          "numerator": 120.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 120.0,
+          "denominator": 120.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 360.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 2880.982692307692,
+          "low": 2872.163365384615,
+          "high": 2889.4009134615385,
+          "numerator": 1498111.0,
+          "denominator": 520.0
+        },
+        "dream_token_share": {
+          "value": 0.4479314283120543,
+          "low": 0.44688756920093414,
+          "high": 0.4490828265154318,
+          "numerator": 671051.0,
+          "denominator": 1498111.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": 0.3333333333333333,
+          "low": 0.3333333333333333,
+          "high": 0.3333333333333333,
+          "numerator": 80.0,
+          "denominator": 240.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 520.0
+        },
+        "final_stale_notes": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 40.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.625,
+          "low": 0.625,
+          "high": 0.625,
+          "numerator": 400.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "condition": "memory_poison",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": 280.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.5625,
+          "low": 0.5625,
+          "high": 0.5625,
+          "numerator": 360.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "numerator": 120.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 0.8,
+          "low": 0.8,
+          "high": 0.8,
+          "numerator": 160.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "poison_follow_given_seen": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "verified_given_note": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 480.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 2592.9714285714285,
+          "low": 2578.9499107142856,
+          "high": 2606.153839285714,
+          "numerator": 726032.0,
+          "denominator": 280.0
+        },
+        "dream_token_share": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 726032.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_poison_repair_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "dream_correct_loss_rate": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "final_stale_notes": {
+          "value": 3.0,
+          "low": 3.0,
+          "high": 3.0,
+          "numerator": 120.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 2.0,
+          "low": 2.0,
+          "high": 2.0,
+          "numerator": 80.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": -0.125,
+          "low": -0.125,
+          "high": -0.125,
+          "numerator": -80.0,
+          "denominator": 640.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "condition": "memory_poison_dream",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "scenarios": 40,
+      "episodes": 40,
+      "epochs": 1,
+      "excluded": 0,
+      "k": 1,
+      "solved_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "clean_k": {
+        "value": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "numerator": 0.0,
+        "denominator": 40.0
+      },
+      "rates": {
+        "accuracy": {
+          "value": 0.8125,
+          "low": 0.8125,
+          "high": 0.8125,
+          "numerator": 520.0,
+          "denominator": 640.0
+        },
+        "error_rate": {
+          "value": 0.1875,
+          "low": 0.1875,
+          "high": 0.1875,
+          "numerator": 120.0,
+          "denominator": 640.0
+        },
+        "abstain_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "accuracy_stable": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 240.0,
+          "denominator": 240.0
+        },
+        "accuracy_drifted": {
+          "value": 0.4,
+          "low": 0.4,
+          "high": 0.4,
+          "numerator": 80.0,
+          "denominator": 200.0
+        },
+        "accuracy_fresh": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 200.0,
+          "denominator": 200.0
+        },
+        "accuracy_poison_target": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 160.0,
+          "denominator": 160.0
+        },
+        "stale_trust_rate": {
+          "value": 0.6,
+          "low": 0.6,
+          "high": 0.6,
+          "numerator": 120.0,
+          "denominator": 200.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 160.0
+        },
+        "stale_trust_given_seen": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 120.0,
+          "denominator": 120.0
+        },
+        "poison_follow_given_seen": {
+          "value": null,
+          "low": null,
+          "high": null,
+          "numerator": 0.0,
+          "denominator": 0.0
+        },
+        "verified_given_note": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 360.0
+        },
+        "lenient_grading_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 640.0
+        },
+        "tokens_per_correct_answer": {
+          "value": 2890.873076923077,
+          "low": 2882.0691346153844,
+          "high": 2899.3173557692307,
+          "numerator": 1503254.0,
+          "denominator": 520.0
+        },
+        "dream_token_share": {
+          "value": 0.44982019006767987,
+          "low": 0.44879561829806824,
+          "high": 0.45094261353830734,
+          "numerator": 676194.0,
+          "denominator": 1503254.0
+        },
+        "amendments_check_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 80.0
+        },
+        "incomplete_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "dream_stale_repair_rate": {
+          "value": 0.3333333333333333,
+          "low": 0.3333333333333333,
+          "high": 0.3333333333333333,
+          "numerator": 80.0,
+          "denominator": 240.0
+        },
+        "dream_poison_repair_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 80.0,
+          "denominator": 80.0
+        },
+        "dream_correct_loss_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 480.0
+        },
+        "final_stale_notes": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": 40.0,
+          "denominator": 40.0
+        },
+        "final_poison_notes": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": 0.0,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.625,
+          "low": 0.625,
+          "high": 0.625,
+          "numerator": 400.0,
+          "denominator": 640.0
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "model": "memorydrift/amnesiac",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory",
+      "control": "stateless",
+      "label": "memory vs. no memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_dream",
+      "control": "memory",
+      "label": "dreaming vs. memory alone",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison",
+      "control": "memory",
+      "label": "poisoned vs. clean memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/amnesiac",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison_dream",
+      "control": "memory_poison",
+      "label": "dreaming vs. poisoned memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory",
+      "control": "stateless",
+      "label": "memory vs. no memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.4375,
+          "low": 0.4375,
+          "high": 0.4375,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.4458333333333333,
+          "low": 0.39583333333333337,
+          "high": 0.4916666666666667,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.41500000000000004,
+          "low": 0.355,
+          "high": 0.475,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_dream",
+      "control": "memory",
+      "label": "dreaming vs. memory alone",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison",
+      "control": "memory",
+      "label": "poisoned vs. clean memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/calibrated",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison_dream",
+      "control": "memory_poison",
+      "label": "dreaming vs. poisoned memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory",
+      "control": "stateless",
+      "label": "memory vs. no memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.125,
+          "low": 0.125,
+          "high": 0.125,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": -0.1875,
+          "low": -0.1875,
+          "high": -0.1875,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.4458333333333333,
+          "low": 0.39583333333333337,
+          "high": 0.4916666666666667,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": -0.585,
+          "low": -0.645,
+          "high": -0.525,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_dream",
+      "control": "memory",
+      "label": "dreaming vs. memory alone",
+      "effects": {
+        "accuracy": {
+          "value": 0.125,
+          "low": 0.125,
+          "high": 0.125,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.25,
+          "low": 0.25,
+          "high": 0.25,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.4,
+          "low": 0.4,
+          "high": 0.4,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": -0.4,
+          "low": -0.4,
+          "high": -0.4,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison",
+      "control": "memory",
+      "label": "poisoned vs. clean memory",
+      "effects": {
+        "accuracy": {
+          "value": -0.25,
+          "low": -0.25,
+          "high": -0.25,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": -0.5,
+          "low": -0.5,
+          "high": -0.5,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": -0.5,
+          "low": -0.5,
+          "high": -0.5,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": 0.0,
+          "low": 0.0,
+          "high": 0.0,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    },
+    {
+      "model": "memorydrift/trusting",
+      "memory_policy": "free_form",
+      "feedback": true,
+      "freshness_signal": true,
+      "treated": "memory_poison_dream",
+      "control": "memory_poison",
+      "label": "dreaming vs. poisoned memory",
+      "effects": {
+        "accuracy": {
+          "value": 0.375,
+          "low": 0.375,
+          "high": 0.375,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "net_score": {
+          "value": 0.75,
+          "low": 0.75,
+          "high": 0.75,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_stable": {
+          "value": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "accuracy_drifted": {
+          "value": 0.4,
+          "low": 0.4,
+          "high": 0.4,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "stale_trust_rate": {
+          "value": -0.4,
+          "low": -0.4,
+          "high": -0.4,
+          "numerator": null,
+          "denominator": 40.0
+        },
+        "poison_follow_rate": {
+          "value": -1.0,
+          "low": -1.0,
+          "high": -1.0,
+          "numerator": null,
+          "denominator": 40.0
+        }
+      }
+    }
+  ],
+  "exclusions": []
+}
