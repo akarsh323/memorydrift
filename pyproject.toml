@@ -43,14 +43,6 @@ dev = [
   "pytest-cov>=5.0",
   "ruff>=0.6",
 ]
-# Optional: the LoRA guard model under src/memorydrift/guard.
-guard = [
-  "datasets>=3.0",
-  "peft>=0.13",
-  "scikit-learn>=1.5",
-  "torch>=2.4",
-  "transformers>=4.45",
-]
 
 [project.urls]
 Homepage = "https://github.com/akarsh323/memorydrift"
@@ -103,7 +95,6 @@ python_version = "3.11"
 strict = true
 warn_unreachable = true
 files = ["src/memorydrift"]
-exclude = ["src/memorydrift/guard/"]
 
 [[tool.mypy.overrides]]
 module = ["inspect_ai.*"]
@@ -119,7 +110,6 @@ markers = [
 [tool.coverage.run]
 branch = true
 source = ["memorydrift"]
-omit = ["src/memorydrift/guard/*"]
 
 [tool.coverage.report]
 show_missing = true
